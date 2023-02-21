@@ -77,6 +77,8 @@ overflow: clip;
 /*-----------------------------------------------------------*/
 .header {
     background-color:#EDF2EC;
+    display: inline;
+    text-align: center;
 }
 .header__conteiner {
     display:flex;
@@ -87,6 +89,7 @@ overflow: clip;
 }
 .header_logo {
     padding-left:110px;
+    padding-bottom: 8px;
 }
 .header_menu {
     flex: 1 1 auto;
@@ -95,13 +98,24 @@ overflow: clip;
 .menu_list {
     display: flex;
     justify-content: flex-end;
-    flex-wrap: wrap;
     column-gap: 46px; 
 }
 .menu_list:last-child {
     padding-right:110px;
 }
-.menu_item {
+@media (max-width: 767.98px){
+    .header_menu {
+        flex: 0 0 auto;
+    }
+    .header__conteiner {
+        column-gap: 139px;
+        display: flex;
+        justify-content: center;
+    }
+    [class*="__conteiner"] {
+        margin: 0 auto;
+        padding: 0px 50px;
+    }
 }
 
 .menu_link {
@@ -168,6 +182,16 @@ overflow: clip;
 }
 .welcome_button:hover {
     color:#fff;
+}
+@media (max-width: 767.98px){
+    .welcome_row {  
+        column-gap: 42px;
+        justify-content: center;
+        
+    }
+    .welcome_image {
+        flex: 0 0 280px;
+    }
 }
 /*--------------------------------------------------------------*/
 /*Section about page*/
