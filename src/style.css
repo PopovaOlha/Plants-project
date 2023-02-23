@@ -304,7 +304,7 @@ overflow: clip;
 }
 
 .services_row { 
-    margin: 0 auto; 
+    margin:0 auto; 
 }
 
 .services_row:not(:last-child) {
@@ -312,6 +312,7 @@ overflow: clip;
 }
 
 .serviсe_row {
+    display: flex;
     max-width: 1222px;
 }
 
@@ -352,19 +353,18 @@ overflow: clip;
 
 .service_lining {
     display: flex;
+    flex-wrap: wrap;
     column-gap: 116px;
-
+    row-gap: 55px;
 }
-
-.first_service {
-    margin-bottom: 55px;
+.service_item {
+    flex: 0 1 27%;
 }
 
 .body_item {
     border: 1px solid #E3E1D5;
     border-radius: 20px;
 }
-
 .service_image {
     flex: 0 0 329px;
 }
@@ -398,6 +398,39 @@ overflow: clip;
     margin-bottom: 36px;
     text-align: center;
 }
+
+@media (max-width: 767.98px){
+   
+    .service_lining { 
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0px;
+        column-gap: 106px;
+        row-gap: 38px;
+    } 
+    .service_content {
+        display: flex;
+        flex-direction: column;
+    }
+    .about_actions {
+        display: flex;
+    }
+    .service_title {
+        font-size: 35px;
+        line-height: 1.31; /* 46/35 */
+    }
+    .service_item { 
+        flex: 0 1 40%;
+    }
+    .first_service {
+       
+    }
+    .second_service {
+       
+    } 
+}
+
+
 /*----------------------------------------------------------*/
 /* Section prices_section*/
 /*---------------------------------------------------------*/
