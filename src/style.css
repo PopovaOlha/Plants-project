@@ -407,6 +407,7 @@ overflow: clip;
    
     .service_lining { 
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;
         margin: 0px;
         column-gap: 106px;
@@ -747,6 +748,34 @@ overflow: clip;
     color: #717171;
     border-bottom: 1px solid #717171;
 }
+@media (max-width: 767.98px){
+    .contacts_row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contacts_image {
+        max-width: 200px;
+        max-height: 249px;
+        order:3;
+        margin: 0 auto;
+    }
+    .prices_page {
+        padding-top: 40px;
+    }
+    .contacts_word {
+        margin: 0 auto;
+        padding-top: 0px;
+    }
+    .contacts_word:not(:last-child) {
+        margin-bottom: 100px;
+    }
+    .selected_column {
+        padding-top: 0px;
+        margin-bottom: 250px;
+    }
+}
+
 /*-------------------------------------------------*/
 /*Footer section*/
 /*-------------------------------------------------*/
@@ -790,4 +819,27 @@ overflow: clip;
     display:flex;
     column-gap: 20px;
 }
-
+@media (max-width: 767.98px){
+    .footer {
+        padding-top: 33px;
+        padding-bottom: 18px;
+    }
+    .footer_row {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+    .github_item {
+        font-size: 19px;
+        line-height: 1.2; /* 24/20 */
+    }
+    .footer-school_name {
+        font-size: 20px;
+        line-height: 1.2; /* 24/20 */
+    }
+    .footer-link_content {
+        height: 50px;
+        align-items: center;
+    }
+}
