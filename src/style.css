@@ -118,7 +118,7 @@ overflow: clip;
 .icon-menu {
     display: none;
    }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .header_menu {
         flex: 0 0 auto;
     }
@@ -134,7 +134,7 @@ overflow: clip;
         padding: 0px 50px;
     }
 }
-@media (max-width: 380px){
+@media (max-width: 767.98px){
     .menu_list {
         justify-content: center;
         flex-direction: column;
@@ -281,7 +281,7 @@ overflow: clip;
 .welcome_button:hover {
     color:#fff;
 }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .welcome_page {
         padding-top: 40px;
         padding-bottom: 70px;
@@ -356,7 +356,7 @@ overflow: clip;
 .about_image img {
     max-width: 100%;
 }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .about_page {
         padding-top: 40px;
         padding-bottom: 95px;
@@ -494,7 +494,7 @@ overflow: clip;
     text-align: center;
 }
 
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .service_page {
         padding-top: 60px;
         padding-bottom: 70px;
@@ -709,7 +709,7 @@ overflow: clip;
     margin-bottom: 12px;
     border-radius: 10px;
 }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .prices_page {
         padding-top: 40px;
         padding-bottom: 88px;
@@ -843,7 +843,7 @@ overflow: clip;
     color: #717171;
     border-bottom: 1px solid #717171;
 }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .contacts_row {
         display: flex;
         flex-direction: column;
@@ -913,7 +913,7 @@ overflow: clip;
     display:flex;
     column-gap: 20px;
 }
-@media (max-width: 767.98px){
+@media (max-width: 991.98px){
     .footer {
         padding-top: 33px;
         padding-bottom: 18px;
