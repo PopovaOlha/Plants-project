@@ -620,7 +620,6 @@ overflow: clip;
         flex: 0 1 80%;
     }
 }
-
 /*----------------------------------------------------------*/
 /* Section prices_section*/
 /*---------------------------------------------------------*/
@@ -903,6 +902,7 @@ overflow: clip;
         margin-bottom: 0px;
     }
 }
+
 /*---------------------------------------------------------------*/
 /*Section contacts_page*/
 /*------------------------------------------------------------------*/
@@ -948,8 +948,8 @@ overflow: clip;
     padding-top: 27px;
     padding-left: 20px;
     background-color: #DCE9D9;
-    display:none;
-}
+    display: none;
+} 
 
 .selected_column {
     padding-top: 95px;
@@ -983,6 +983,7 @@ overflow: clip;
     line-height: 2.5; /* 40/16 */
     letter-spacing: 0.05em;
     color: #717171;
+    
 }
 .city_link {
     display: block;
@@ -992,6 +993,13 @@ overflow: clip;
     font-size: 16px;
     line-height: 2.5; /* 40/16 */
     letter-spacing: 0.05em; 
+    border-bottom: 1px solid #D9D9D9;
+}
+.new-york_link:not(:last-child) {
+    margin-bottom: 36px;
+}
+.sherrill_link{
+    margin-bottom: 31px;
 }
 .city_link:active {
     color: #717171;
@@ -1023,6 +1031,30 @@ overflow: clip;
         padding-top: 0px;
         margin-bottom: 250px;
     }
+}
+@media (max-width: 767.98px){
+    .prices_page {
+        padding-top: 25px;
+    }
+    .contacts_title {
+        font-size: 25px;
+        line-height: 1.32; /* 33/25 */
+    }
+    .contacts_word:not(:last-child) {
+        margin-bottom: 80px;
+    }
+    .city_text {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .contacts_image {
+        max-width: 100px;
+        max-height: 125px;
+    }
+    .selected_column {
+        margin-bottom: 132px;
+    }
+
 }
 /*-------------------------------------------------*/
 /*Footer section*/
@@ -1089,5 +1121,11 @@ overflow: clip;
     .footer-link_content {
         height: 50px;
         align-items: center;
+    }
+}
+@media (max-width: 767.98px){
+    .footer {
+        padding-top: 22px;
+        padding-bottom: 7px;
     }
 }

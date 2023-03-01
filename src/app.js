@@ -1,4 +1,3 @@
-"use strict"
 
 "use strict"
 
@@ -14,7 +13,12 @@ boxButton.forEach( button => {
 
 document.addEventListener("click", showList);
 
-function showList(event){
+const selectButton = document.querySelector('.city_text');
+selectButton.addEventListener('click', showCityValue);
+
+
+
+function showList(event) {
     const targetItem = event.target;
     if (targetItem.closest('.icon-menu')) {
       document.documentElement.classList.toggle('menu-open');
@@ -48,7 +52,6 @@ event.preventDefault();
 let currentBox = event.target.closest('.summary_text');
 let currentContent = event.target.parentElement.parentElement;
 let currentImage = event.target.children[0];
-console.log(currentImage.src);
 currentBox.classList.toggle('active');
 
  if (currentBox.classList.contains('active')) {
@@ -61,3 +64,21 @@ currentBox.classList.toggle('active');
   currentImage.src = './mkdir plants/accordion_btn.svg' ;
  }
 };
+
+function showCityValue(event) {
+  event.preventDefault();
+let citySelect = event.target.closest('.city_text');
+let selectContent = event.target.nextElementSibling;
+citySelect.classList.toggle('active');
+
+if(citySelect.classList.contains('active')) {
+  selectContent.style.display = 'block';
+  citySelect.style.backgroundColor = '#C1E698';
+  event.target.innerHTML = 'City<img src="./mkdir plants/accordion_btn-2.svg" class="contacts-accordion_button" alt="button">';
+
+} else {
+  selectContent.style.display = 'none';
+  citySelect.style.backgroundColor = '#D6E7D2';
+  event.target.innerHTML = 'City<img src="./mkdir plants/accordion_btn.svg" class="contacts-accordion_button" alt="button">';
+}
+}
