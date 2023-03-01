@@ -16,11 +16,10 @@ document.addEventListener("click", showList);
 
 function showList(event){
     const targetItem = event.target;
-
     if (targetItem.closest('.icon-menu')) {
-        document.documentElement.classList.toggle('menu-open');
+      document.documentElement.classList.toggle('menu-open');
     }
-}
+};
 
 function showImageBlur(event) {
   event.preventDefault();
