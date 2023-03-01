@@ -70,7 +70,7 @@ overflow: clip;
 .orange_button {
     display: inline-block;
     text-align: center;
-    padding: 12px 54px;
+    padding: 12px 52px;
 }
 /*---------------------------------------------------------*/
 /*Header*/
@@ -497,15 +497,21 @@ overflow: clip;
 .about_button {
     margin-right: 38px;
 }
-
+.planting_button {
+    margin-left: 38px;
+}
 .about_button:last-child {
     margin-right: 0px;
 }
 
 .about_actions {
+    display: flex;
     padding-top: 45px;
 }
-
+.about_box {
+    display: flex;
+    align-items: center;
+}
 .service_lining {
     display: flex;
     flex-wrap: wrap;
@@ -591,14 +597,20 @@ overflow: clip;
     }
     .about_actions {
         display: flex;
+        flex-wrap: wrap;
         column-gap: 10px;
         row-gap: 9px;
+        padding-top:35px;
     }
     .about_button {
         padding: 8px 28px;
         font-size: 15px;
         line-height: 1.33; /* 20/15 */
         margin:0;
+    }
+    .about_box {
+        display: flex;
+        column-gap: 10px;
     }
     .orange_button {
         padding: 8px 37px;
@@ -610,6 +622,7 @@ overflow: clip;
         flex: 0 1 80%;
     }
 }
+
 /*----------------------------------------------------------*/
 /* Section prices_section*/
 /*---------------------------------------------------------*/
@@ -829,6 +842,69 @@ overflow: clip;
     .prices_action:not(:last-child) {
         margin-bottom: 46px;
     }
+}
+@media (max-width: 767.98px){
+    .prices_page {
+        padding-top: 25px;
+        padding-bottom: 40px;
+    }   
+    .prices_name:not(:last-child) {
+        margin-bottom: 40px;
+    }
+    .prices_check {
+        flex-direction: column;
+        text-align: center;
+    }
+    .prices_information {
+        padding-top: 19px;
+        text-align: center;
+    }
+    .prices_word {
+        font-size: 25px;
+        line-height: 1.2; /* 30/25 */
+    }
+    .prices_body {
+        padding: 29px 22px;
+        width: 224px;
+        margin:0 auto;
+    }
+    .summary_text {
+        font-size: 15px;
+        line-height: 1.33; /* 20/15 */
+    }
+    .prices_item {
+        max-width: 180px;
+        margin: 0 auto;
+    }
+     .accordion_paragraph{
+      text-align: left;
+      margin-left: -35px;
+    }
+    .first-accordion {
+        margin-left: 40px;
+    }
+    .second-accordion {
+        margin-left: 24px;
+    }
+    .third-accordion {
+        margin-left: 26px;
+    }
+    .prices_title {
+        font-size: 20px;
+        line-height: 1.75; /* 35/20 */
+    }
+    .prices_button {
+        padding: 8px 22px;
+        font-size: 15px;
+        line-height: 1.33; /* 20/15 */
+    }
+    .prices_image {
+        display: none;
+    }
+    .prices_action:not(:last-child) {
+        margin-bottom: 0px;
+    }
+
 }
 /*---------------------------------------------------------------*/
 /*Section contacts_page*/
