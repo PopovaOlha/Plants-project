@@ -41,15 +41,17 @@ overflow: clip;
 .button {
     display: inline;
     border: 2px solid #E06733;
-    background-color:#F5F5F5;
+    background-color :#F5F5F5;
     border-radius: 10px;
     text-align: center;
     padding: 11px 27px;
     transition: all ease-in-out 0.2s;
 }
+
 .button:hover {
     background-color: #E06733;
 }
+
 .about_button {
     font-family: 'Inika';
     font-style: normal;
@@ -59,14 +61,16 @@ overflow: clip;
     color: #E06733;
     border: 1px solid #E06733;
     border-radius: 5px;
-    padding:12px 40px;  
+    padding: 12px 40px;  
     align-items: center; 
     transition: all ease-in-out 0.3s;
 } 
+
 .about_button:hover {
     background-color: #E06733;
     color: #fff;
 }
+
 .orange_button {
     display: inline-block;
     text-align: center;
@@ -76,21 +80,24 @@ overflow: clip;
 /*Header*/
 /*-----------------------------------------------------------*/
 .header {
-    background-color:#EDF2EC;
+    background-color: #EDF2EC;
     display: inline;
     text-align: center;
 }
+
 .header__conteiner {
     display: flex;
     min-height: 134px;
-    padding-top:5px;
-    padding-bottom:5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     align-items: center;
 }
+
 .header_logo {
-    padding-left:110px;
+    padding-left: 110px;
     padding-bottom: 10px;
 }
+
 .header_menu {
     flex: 1 1 auto;
 }
@@ -100,9 +107,11 @@ overflow: clip;
     justify-content: flex-end;
     column-gap: 46px; 
 }
+
 .menu_list:last-child {
-    padding-right:110px;
+    padding-right: 110px;
 }
+
 .menu_link {
     font-family: 'Inika';
     color: #010201;
@@ -111,17 +120,21 @@ overflow: clip;
     font-size: 16px;
     line-height: 3.12; /* 50/16 */
 }
+
 .menu_link:hover {
     opacity: 0.6;
     transition: all 0.3s ease 0s;;
 }
+
 .icon-menu {
     display: none;
    }
+
 @media (max-width: 991.98px){
     .header_menu {
         flex: 0 0 auto;
     }
+
     .header__conteiner {
         min-height: 117px;
         max-width: 768px;
@@ -129,35 +142,42 @@ overflow: clip;
         display: flex;
         justify-content: center;
     }
+
     [class*="__conteiner"] {
         margin: 0 auto;
         padding: 0px 50px;
     }
 }
+
 @media (max-width: 767.98px){
 
     [class*="__conteiner"] {
         margin: 0 auto;
         padding: 0px 25px;
     }
+
     .header__conteiner {
         display: flex;
         justify-content: space-around;
         column-gap: 213px;
     }
+
     .menu_list {
         justify-content: center;
         flex-direction: column;
         column-gap: 15px;
         text-align: center;
     }
+
     .menu_list:last-child {
         padding: 0px;
     }
+
     .header_logo {
-        padding-left:0px;
+        padding-left: 0px;
         padding-bottom: 10px;
     }
+
     .icon-menu {
         display: block;
         flex: 0 0 40px;
@@ -165,6 +185,7 @@ overflow: clip;
         position: relative;
         z-index: 5;
     }
+
     .icon-menu span,
     .icon-menu::before,
     .icon-menu::after {
@@ -176,12 +197,15 @@ overflow: clip;
         background-color: grey;
         transition: all 0.3s ease 0s;
     }
+
     .icon-menu::before {
-        top:0;
+        top: 0;
     }
+
     .icon-menu::after {
-        bottom:0;
+        bottom: 0;
     }
+
     .icon-menu span {
         top: calc(50% - 2px);
     }
@@ -189,45 +213,51 @@ overflow: clip;
     .menu-open .icon-menu {
         width: 0px;
     }
+
     .menu-open .icon-menu::before {
         top: calc(50% - 2px);
         transform: rotate(-45deg);
     }
+
     .menu-open .icon-menu::after {
         bottom: calc(50% - 2px);
         transform: rotate(45deg);
     }
+
     .menu_body {
         position: fixed;
         width: 100%;
         height: 100%;
         background-color: #EDF2EC;;
         left: -100%;
-        top:0;
+        top: 0;
         padding: 100px 15px 30px 15px;
         overflow: auto;
         transition: left 0.3s ease 0s;
-    }
+    } 
     .menu_body::before {
         content: "";
         width: 100%;
         position: fixed;
-        top:0;
-        left:-100%;
+        top: 0;
+        left: -100%;
         height: 70px;
         background-color: #EDF2EC;;
         z-index: 2;
         transition: left 0.3s ease 0s;
     }
+
     .menu_list {
         flex-direction: column;
         justify-content: center;
         row-gap: 10px;
         text-align: center;  
     }
+
      .menu_link {
         font-size: 25px;
      }
+
      .header__conteiner {
         column-gap: 80px;
         min-height: 96px;
@@ -327,9 +357,11 @@ overflow: clip;
     .welcome_page {
         padding: 24px 0px;
     }
+
     .welcome_image {
         display: none;
     }
+
     .welcome_content:not(:last-child) {
         margin-bottom: 21px;
     }
@@ -337,10 +369,12 @@ overflow: clip;
         font-size: 25px;
         line-height: 1.4; /* 35/25 */
     }
+
     .welcome_text {
         font-size: 16px;
         line-height: 1.56; /* 25/16 */
     }
+
     .welcome_text:not(:last-child) {
         margin-bottom: 25px;
     }
@@ -357,16 +391,19 @@ overflow: clip;
     background-color: #FFFFFF;
     padding: 93px 0;
 }
+
 .about__conteiner {
     display: flex;
     justify-content: center;
 }
+
 .about_row {
     display: flex;
     justify-content: center;
     column-gap: 153px;
     max-width: 1222px;
 }
+
 .about_body {
     padding-top: 68px;
 }
@@ -379,20 +416,26 @@ overflow: clip;
     line-height: 1.3; /* 52/40 */
     color: #499A18;
 }
+
 .about_content:not(:last-child) {
     margin-bottom: 40px;
 }
+
 .about_text {
     font-size: 20px;
-    line-height:1.5; /* 30/20 */
+    line-height: 1.5; /* 30/20 */
 }
+
 .about_image {
     flex: 0 0 464px;
 }
+
 .about_image img {
     max-width: 100%;
 }
+
 @media (max-width: 991.98px){
+
     .about_page {
         padding-top: 40px;
         padding-bottom: 95px;
@@ -403,40 +446,51 @@ overflow: clip;
         flex-direction: column;
         align-items: center;
     }
+
     .about_body {
-        padding:0;
+        padding: 0;
     }
+
     .about_title {
         text-align: center;
         font-size: 35px;
         line-height: 1.31 /* 46/35 */
     }
+
     .about_text {
         margin-bottom: 68px;
     }
+
      .about_image {
         width: 280px;
         max-height: 275px;
     }
 }
+
 @media (max-width: 767.98px){
+
     .about_page {
         padding: 30.5px 0;
     }
+
     .about_content:not(:last-child) {
         margin-bottom: 20.5px;
     }
+
     .about_title {
         font-size: 25px;
         line-height: 1.32; /* 33/25 */
     }
+
     .about_text {
         font-size: 15px;
         line-height: 1.66; /* 25/15 */
     }
+
     .about_text {
-        margin:0;
+        margin: 0;
     }
+
     .about_image {
         width: 150px;
         max-height: 147px;
@@ -457,7 +511,7 @@ overflow: clip;
 }
 
 .services_row { 
-    margin:0 auto; 
+    margin: 0 auto; 
 }
 
 .services_row:not(:last-child) {
@@ -495,9 +549,11 @@ overflow: clip;
 .about_button {
     margin-right: 38px;
 }
+
 .planting_button {
     margin-left: 38px;
 }
+
 .about_button:last-child {
     margin-right: 0px;
 }
@@ -524,6 +580,7 @@ overflow: clip;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
 }
+
 .service_image {
     flex: 0 0 329px;
 }
@@ -559,6 +616,7 @@ overflow: clip;
 }
 
 @media (max-width: 991.98px){
+
     .service_page {
         padding-top: 60px;
         padding-bottom: 70px;
@@ -572,27 +630,33 @@ overflow: clip;
         column-gap: 106px;
         row-gap: 38px;
     } 
+
     .service_content {
         display: flex;
         flex-direction: column;
     }
+
     .about_actions {
         display: flex;
     }
+
     .service_title {
         font-size: 35px;
         line-height: 1.31; /* 46/35 */
     }
+
     .service_item { 
         flex: 0 1 40%;
     }
 }
+
 @media (max-width: 767.98px){
     
     .service_title {
         font-size: 25px;
         line-height: 1.32; /* 33/25 */
     }
+
     .about_actions {
         display: flex;
         flex-wrap: wrap;
@@ -600,20 +664,24 @@ overflow: clip;
         row-gap: 9px;
         padding-top:35px;
     }
+
     .about_button {
         padding: 8px 28px;
         font-size: 15px;
         line-height: 1.33; /* 20/15 */
-        margin:0;
+        margin: 0;
     }
+
     .about_box {
         display: flex;
         column-gap: 10px;
     }
+
     .orange_button {
         padding: 8px 37px;
         margin:0;
     }
+
     .service_item { 
         display: inline-flex;
         justify-content: center;
@@ -631,7 +699,7 @@ overflow: clip;
 .prices__conteiner {
     display: flex;
     flex-direction: row;
-    justify-content:center;
+    justify-content: center;
 }
 
 .prices_row {
@@ -645,7 +713,7 @@ overflow: clip;
 }
 
 .prices_form {
-    display:flex;
+    display: flex;
     max-width: 332px;
     flex-direction: column;
     justify-content: left;
@@ -668,7 +736,7 @@ overflow: clip;
     display: flex;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
-    padding:38px 44px;
+    padding: 38px 44px;
 }
 
 .prices_item {
@@ -680,7 +748,7 @@ overflow: clip;
     padding: 16px 44px;
     overflow: hidden;
     transition: all ease-in-out 0.2s;
-}
+} 
 .prices_item:not(:last-child) {
     margin-bottom: 22px;
 }
@@ -724,7 +792,7 @@ overflow: clip;
 }
 
 .prices_button {
-    color:#E06733;
+    color: #E06733;
     padding: 12px 32px;
     transition: all ease-in-out 0.2s;
 }
@@ -748,9 +816,9 @@ overflow: clip;
     font-size: 20px;
     line-height: 1; /* 20/20 */
     color: #000000;
-    list-style-type:none;
+    list-style-type: none;
     cursor: pointer;
-}
+} 
 .summary_text img {
     align-items: center;
 }
@@ -759,12 +827,14 @@ overflow: clip;
     font-weight: 700;
     font-size: 12px;
     line-height: 1.66; /* 20/12 */
-}
+} 
+
 .price_bigger {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
 }
+
 .accordion_paragraph {
     font-family: 'Inter';
     font-style: normal;
@@ -776,16 +846,19 @@ overflow: clip;
     min-width: 169px;
     line-height: 1;/* 10/10 */
     color: #717171;
-}
+} 
+
 .accordion_paragraph:not(:last-child) {
     margin-bottom: 6px;
-}
+} 
+
 .summary-per_hour {
     font-weight: 400;
     font-size: 12px;
     line-height: 1.66; /* 20/12 */
     color: #000000;
 }
+
 .summary_content:not(:last-child) {
     margin-bottom: 12px;
 }
@@ -802,23 +875,29 @@ overflow: clip;
 }
 
 @media (max-width: 991.98px){
+
     .prices_page {
         padding-top: 40px;
         padding-bottom: 88px;
     }
+
     .prices_check { 
         column-gap: 40px;
     }
+
     .prices_name:not(:last-child) {
         margin-bottom: 50px;
     }
+
     .prices_information {
         padding-top: 99px;
     }
+
     .prices_title {
         font-size: 25px;
         line-height: 1.4;
     }
+
     .prices_button {
         font-family: 'Inika';
         font-style: normal;
@@ -829,76 +908,96 @@ overflow: clip;
         color: #E06733;
         padding: 12px 32px;
     }
+
     .prices_word {
         font-size: 35px;
         line-height: 1.2; /* 42/35 */
         padding-left: 15px;
     }
+
     .prices_content:not(:last-child) {
         margin-bottom: 38px;
     }
+
     .prices_action:not(:last-child) {
         margin-bottom: 46px;
     }
 }
+
 @media (max-width: 767.98px){
+
     .prices_page {
         padding-top: 25px;
         padding-bottom: 40px;
     }   
+
     .prices_name:not(:last-child) {
         margin-bottom: 40px;
     }
+
     .prices_check {
         flex-direction: column;
         text-align: center;
     }
+
     .prices_information {
         padding-top: 19px;
         text-align: center;
     }
+
     .prices_word {
         font-size: 25px;
         line-height: 1.2; /* 30/25 */
     }
+
     .prices_body {
         padding: 29px 22px;
         width: 224px;
-        margin:0 auto;
+        margin: 0 auto;
     }
+
     .summary_text {
         font-size: 15px;
         line-height: 1.33; /* 20/15 */
     }
+
     .prices_item {
         max-width: 180px;
         margin: 0 auto;
     }
+
      .accordion_paragraph{
       text-align: left;
       margin-left: -35px;
     }
+
     .first-accordion {
         margin-left: 40px;
     }
+
     .second-accordion {
         margin-left: 24px;
     }
+
     .third-accordion {
         margin-left: 26px;
     }
+
     .prices_title {
         font-size: 20px;
         line-height: 1.75; /* 35/20 */
     }
+
     .prices_button {
         padding: 8px 22px;
         font-size: 15px;
         line-height: 1.33; /* 20/15 */
     }
+
     .prices_image {
         display: none;
     }
+
     .prices_action:not(:last-child) {
         margin-bottom: 0px;
     }
@@ -920,7 +1019,7 @@ overflow: clip;
 
 .contacts_row {
     max-width: 1222px;
-    display:flex;   
+    display: flex;   
 }
 
 .contacts_image {
@@ -951,6 +1050,7 @@ overflow: clip;
     background-color: #DCE9D9;
     display: none;
 } 
+
 .selected_column {
     padding-top: 95px;
     display: flex;
@@ -969,13 +1069,16 @@ overflow: clip;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     font-size: 20px;
     line-height: 40px;
+    cursor: pointer;
     letter-spacing: 0.05em;
     color: #717171;
 }
+
 .city_text:active {
     background-color: #C1E698;
     border: 1px solid #D6E7D2;
 }
+
 .city_names {
     font-weight: 400;
     font-size: 16px;
@@ -984,6 +1087,7 @@ overflow: clip;
     color: #717171;
     
 }
+
 .city_link {
     display: block;
     max-width: 380px;
@@ -994,16 +1098,20 @@ overflow: clip;
     letter-spacing: 0.05em; 
     border-bottom: 1px solid #D9D9D9;
 }
+
 .new-york_link:not(:last-child) {
     margin-bottom: 36px;
 }
+
 .sherrill_link{
     margin-bottom: 31px;
 }
+
 .city_link:active {
     color: #717171;
     border-bottom: 1px solid #717171;
 }
+
 .contacts_pop-up {
     background-color: #EDF2EC;
     border: 1px solid #000000;
@@ -1011,10 +1119,11 @@ overflow: clip;
     margin-top: 47px;
     display: none;
 }
+
 .contacts_popup-body {
-    padding: 17px 76px 33px 32px;
-   
+    padding: 17px 76px 33px 32px; 
 }
+
 .contacts_city,
 .contacts_phone,
 .contacts_office-adress {
@@ -1023,9 +1132,11 @@ overflow: clip;
     letter-spacing: 0.05em;
     color: #717171;
 }
+
 .city_name {
     margin-right: 93px;
 }
+
 .city_name,
 .phone_number,
 .city_adress {
@@ -1034,23 +1145,24 @@ overflow: clip;
     letter-spacing: 0.05em;
     color: #000000;
 }
-.contacts_phone {
-   
-}
+
 .phone_number {
     margin-right: 69px;
-}
-.contacts_office-adress {
-   
 }
 .contacts_office-adress:not(:last-child) {
     margin-bottom: 31px;
 }
+
 .city_adress {
     margin-right: 12px;
 }
+
 .contacts_action {
+   display:flex;
+   justify-content: center;
+   margin-left: 30px;
 }
+
 .call-us_button {
     display: inline-block;
     font-size: 10px;
@@ -1064,56 +1176,104 @@ overflow: clip;
     border: 1px solid #E06733;
     border-radius: 5px;
 }
+
 @media (max-width: 991.98px){
+
     .contacts_row {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
+
     .contacts_image {
         max-width: 200px;
         max-height: 249px;
-        order:3;
+        order: 3;
         margin: 0 auto;
     }
+
     .prices_page {
         padding-top: 40px;
     }
+
     .contacts_word {
         margin: 0 auto;
         padding-top: 0px;
     }
+
     .contacts_word:not(:last-child) {
         margin-bottom: 100px;
     }
+
     .selected_column {
         padding-top: 0px;
         margin-bottom: 250px;
     }
 }
+
 @media (max-width: 767.98px){
+
     .prices_page {
         padding-top: 25px;
     }
+
     .contacts_title {
         font-size: 25px;
         line-height: 1.32; /* 33/25 */
     }
+
     .contacts_word:not(:last-child) {
         margin-bottom: 80px;
     }
+
     .city_text {
         max-width: 300px;
         margin: 0 auto;
     }
+
     .contacts_image {
         max-width: 100px;
         max-height: 125px;
     }
+
     .selected_column {
         margin-bottom: 132px;
     }
 
+    .selected_city {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .contacts_popup-body {
+        padding: 23px 36px;
+    }
+
+    .city_name {
+        margin-right: 23px;
+    }
+
+    .phone_number {
+        margin-right: 5px;
+    }
+    
+    .office_row {
+        display: flex;
+    }
+
+    .office_row:not(:last-child) {
+        margin-bottom: 17px;
+    }
+
+    .contacts_office-adress {
+        line-height: 20px;
+    }
+
+    .city_adress {
+        flex: 0 1 18%;
+        margin-right: 10px;
+        line-height: 20px;
+    }
 }
 /*-------------------------------------------------*/
 /*Footer section*/
@@ -1155,33 +1315,40 @@ overflow: clip;
 }
 
 .footer-link_content {
-    display:flex;
+    display: flex;
     column-gap: 20px;
 }
+
 @media (max-width: 991.98px){
+
     .footer {
         padding-top: 33px;
         padding-bottom: 18px;
     }
+
     .footer_row {
         display: flex;
         justify-content: center;
         flex-direction: column;
         row-gap: 16px;
     }
+
     .github_item {
         font-size: 20px;
         line-height: 1.2; /* 24/20 */
     }
+
     .footer-school_name {
         font-size: 20px;
         line-height: 1.2; /* 24/20 */
     }
+
     .footer-link_content {
         height: 50px;
         align-items: center;
     }
 }
+
 @media (max-width: 767.98px){
     .footer {
         padding-top: 22px;
