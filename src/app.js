@@ -16,7 +16,10 @@ document.addEventListener("click", showList);
 const selectButton = document.querySelector('.city_text');
 selectButton.addEventListener('click', showCityValue);
 
-
+const cityLink = Array.from(document.querySelectorAll('.city_link'));
+cityLink.forEach(link => {
+  link.addEventListener('click', openPopUp);
+});
 
 function showList(event) {
     const targetItem = event.target;
@@ -69,6 +72,7 @@ function showCityValue(event) {
   event.preventDefault();
 let citySelect = event.target.closest('.city_text');
 let selectContent = event.target.nextElementSibling;
+let popUpContent = document.querySelector('.contacts_pop-up');
 citySelect.classList.toggle('active');
 
 if(citySelect.classList.contains('active')) {
@@ -77,8 +81,34 @@ if(citySelect.classList.contains('active')) {
   event.target.innerHTML = 'City<img src="./mkdir plants/accordion_btn-2.svg" class="contacts-accordion_button" alt="button">';
 
 } else {
+  popUpContent.style.display = 'none';
   selectContent.style.display = 'none';
   citySelect.style.backgroundColor = '#D6E7D2';
   event.target.innerHTML = 'City<img src="./mkdir plants/accordion_btn.svg" class="contacts-accordion_button" alt="button">';
 }
+};
+
+function openPopUp(event) {
+  event.preventDefault();
+  let cityInformation = [
+    {city: 'Yonkers, NY', phone: '+1 914 678 0003', officeAdress:'511 Warburton Ave' },
+    {city: 'Canandaigua, NY', phone: '+1 585 393 0001', officeAdress: '151 Charlotte Street'},
+    {city: 'Sherrill, NY', phone: '+1 315 908 0004', officeAdress: '14 WEST Noyes BLVD'},
+    {city: 'New York City', phone: '+1 212 456 0002', officeAdress: '9 East 91st Street'},
+  ];
+
+    let cityLink = event.target.closest('.city_link');
+    let cityContent = document.querySelector('.contacts_pop-up');
+    cityLink.classList.toggle('active');
+    
+   const currentPopUp = cityInformation.find(({city, phone, officeAdress}) => {
+    if(cityLink.textContent === city) {
+      cityContent.style.display = 'block';
+      document.querySelector('.city_text').innerHTML = city;
+      document.querySelector('.selected_city').style.display = 'none';
+      document.querySelector('.contacts_city').innerHTML = city;
+      document.querySelector('.contacts_phone').innerHTML = phone;
+      document.querySelector('.contacts_office-adress').innerHTML = officeAdress;
+    } 
+   });
 }
