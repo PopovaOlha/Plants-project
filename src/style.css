@@ -1044,17 +1044,22 @@ overflow: clip;
 }
 
 .selected_city {
+    display: none;
+    flex-direction: column;
     width: 450px;
     padding-top: 27px;
     padding-left: 20px;
     background-color: #DCE9D9;
-    display: none;
+    overflow: hidden;
+    transition: all ease-in-out 0.3s;
 } 
 
 .selected_column {
+
     padding-top: 95px;
     display: flex;
     flex-direction: column;
+   
 }
 
 .city_text {
@@ -1072,6 +1077,7 @@ overflow: clip;
     cursor: pointer;
     letter-spacing: 0.05em;
     color: #717171;
+   
 }
 
 .city_text:active {

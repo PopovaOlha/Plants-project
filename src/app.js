@@ -71,18 +71,20 @@ currentBox.classList.toggle('active');
 function showCityValue(event) {
   event.preventDefault();
 let citySelect = event.target.closest('.city_text');
-let selectContent = event.target.nextElementSibling;
+let selectContent = document.querySelector('.selected_city');
 let popUpContent = document.querySelector('.contacts_pop-up');
 citySelect.classList.toggle('active');
 
 if(citySelect.classList.contains('active')) {
   selectContent.style.display = 'block';
+  selectContent.style.maxHeight = selectContent.scrollHeight + 'px';
   citySelect.style.backgroundColor = '#C1E698';
   event.target.innerHTML = 'City<img src="./mkdir plants/accordion_btn-2.svg" class="contacts-accordion_button" alt="button">';
 
 } else {
+  selectContent.style.paddingTop = '0px';
   popUpContent.style.display = 'none';
-  selectContent.style.display = 'none';
+  selectContent.style.maxHeight = '0px';
   citySelect.style.backgroundColor = '#D6E7D2';
   event.target.innerHTML = 'City<img src="./mkdir plants/accordion_btn.svg" class="contacts-accordion_button" alt="button">';
 }
